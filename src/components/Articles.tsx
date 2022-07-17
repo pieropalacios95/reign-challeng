@@ -34,26 +34,24 @@ export default function Articles() {
     }
 
     React.useEffect(() => {
-        getAllEntries(value, page).then((res) => { 
-            setData(res.data.hits) 
-            setTotalPages(res.data.nbPages) 
+        getAllEntries(value, page).then((res) => {
+            setData(res.data.hits)
+            setTotalPages(res.data.nbPages)
         })
     }, [value, page])
 
     return (
         <div className='container-article'>
             <div className='first-body'>
-                <button>ALL</button>
-                <button>MY FAVS</button>
+                <button className='button-all'>All</button>
+                <button className='button-fav'>My faves</button>
             </div>
             <div className='second-body'>
-                <div>
-                    <select value={value} onChange={handleChange} placeholder='Select your news'>
-                        <option value="angular">Angular</option>
-                        <option value="reactjs">React.js</option>
-                        <option value="vuejs">Vue.js</option>
-                    </select>
-                </div>
+                <select className='select-query' value={value} onChange={handleChange} placeholder='Select your news'>
+                    <option value="angular">Angular</option>
+                    <option value="reactjs">React.js</option>
+                    <option value="vuejs">Vue.js</option>
+                </select>
             </div>
             <div className='third-body'>
                 {data.map((res, index) => (

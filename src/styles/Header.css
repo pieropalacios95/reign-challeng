@@ -1,0 +1,15 @@
+.title-header {
+    display: flex;
+    margin: auto;
+    margin-left: 5%;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Baskerville';
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: local('Basrkeville'), url(./fonts/LibreBaskerville-Regular.ttf) format('truetype');
+}

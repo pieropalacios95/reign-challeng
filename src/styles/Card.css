@@ -1,0 +1,33 @@
+.container-card {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    background-color: #fff;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-card {
+    width: 101px;
+    height: 13px;
+    font-family: 'Roboto';
+    font-size: 11px;
+    color: #606060;
+}
+
+.description-card {
+    width: 440px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #606060;
+}
+
+.right-card {
+    display: flex;
+}

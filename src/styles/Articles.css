@@ -1,0 +1,23 @@
+.container-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-body {
+    display: flex;
+    margin: auto;
+}
+
+.second-body {
+    display: flex;
+    margin-top: 2.5%;
+}
+
+.third-body {
+    display: grid;
+    margin-top: 2.5%;
+}
+
+.footer{
+    width: 100%;
+}

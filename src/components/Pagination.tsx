@@ -1,4 +1,5 @@
 import '../styles/Pagination.css'
+
 interface Props {
     currentPage: number,
     totalPages: number,
